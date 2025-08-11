@@ -1,0 +1,26 @@
+E3A00000             // MOV r0, #0x0
+E3A0103F             // MOV r1, #63
+E1A02000             // MOV r2, r0
+E1A03002             // MOV r3, r2
+E1A04002             // MOV r4, r2
+E5925000             // LDR r5, [r2]
+E1A06001             // MOV r6, r1
+E3560000             // CMP r6, #0
+0A000007             // BEQ +28
+E2833004             // ADD r3, r3, #4
+E5937000             // LDR r7, [r3]
+E1570005             // CMP r7, r5
+AA000001             // BGE +8
+E1A05007             // MOV r5, r7
+E1A04003             // MOV r4, r3
+E2466001             // SUB r6, r6, #1
+EAFFFFF5             // B -44
+E5927000             // LDR r7, [r2]
+E5948000             // LDR r8, [r4]
+E5828000             // STR r8, [r2]
+E5847000             // STR r7, [r4]
+E2822004             // ADD r2, r2, #4
+E2411001             // SUB r1, r1, #1
+E3510000             // CMP r1, #0
+1AFFFFE9             // BNE -88
+EAFFFFFE             // B -8

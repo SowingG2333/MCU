@@ -10,8 +10,8 @@ module instruction_memory (
     reg [31:0] memory [0:255]; 
 
     initial begin
-        // 您的$readmemh保持不变
-        $readmemh("path_to_instruction.mem", memory); // 指向存储运行指令的.mem文件路径
+        // 从项目内的程序镜像加载指令（相对路径）
+        $readmemh("memory/instructions.mem", memory);
     end
 
     // ===============================================================
