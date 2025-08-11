@@ -59,7 +59,7 @@
 
 ## 快速开始（BASYS3 上板）
 
-前置：Vivado 2020.2+（或兼容版本）、BASYS3 开发板。
+前置：Vivado 2022.2（或兼容版本）、BASYS3 开发板。
 
 1) 新建 Vivado 工程，导入本仓库 RTL 源码；将 `mcu_test_harness.v` 设为顶层
 2) 生成/连接以下 IP：
